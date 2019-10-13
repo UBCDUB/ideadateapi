@@ -20,13 +20,6 @@ namespace IdeaDateAPI.Controllers
             _projectRepository = projectRepository;
         }
 
-        // GET: api/values
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
-
         // GET api/values/5
         [HttpGet("{id}")]
         public Project Get(string id)
@@ -36,7 +29,7 @@ namespace IdeaDateAPI.Controllers
         }
 
         // POST api/values
-        [HttpPost]
+        [HttpPost("create")]
         public ActionResult<string> Post([FromBody]Project value)
         {
             string uid = Guid.NewGuid().ToString("N");
@@ -46,14 +39,14 @@ namespace IdeaDateAPI.Controllers
         }
 
         // PUT api/values/5
-        [HttpPut]
+        [HttpPut("edit")]
         public void Put([FromBody]Project value)
         {
             _projectRepository.Update(value);
         }
 
         // DELETE api/values/5
-        [HttpDelete]
+        [HttpDelete("delete/{id}")]
         public void Delete(string id)
         {
             _projectRepository.Delete(id);

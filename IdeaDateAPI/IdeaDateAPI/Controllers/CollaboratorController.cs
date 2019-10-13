@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using IdeaDateAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -11,36 +12,48 @@ namespace IdeaDateAPI.Controllers
     [Route("api/[controller]")]
     public class CollaboratorController : Controller
     {
-        // GET: api/values
-        [HttpGet]
-        public IEnumerable<string> Get()
+        private readonly IUserRepository _userRepository;
+        private readonly IProjectRepository _projectRepository;
+
+        public CollaboratorController(IUserRepository userRepository, IProjectRepository projectRepository)
         {
-            return new string[] { "value1", "value2" };
+            _userRepository = userRepository;
+            _projectRepository = projectRepository;
         }
 
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpGet("getprojects/{uid}")]
+        public IEnumerable<Project> GetProjects(string uid)
         {
-            return "value";
+            IEnumerable<Project> res = new List<Project>();
+            User user = _userRepository.GetUser(uid).Result;
+            IEnumerable<Project> projects = _projectRepository.GetProjects().Result;
+            return projects.Where(p => !(user.LikedProjects.Contains(p.UID) || user.DismissedProjects.Contains(p.UID)));
         }
 
         // POST api/values
-        [HttpPost]
-        public void Post([FromBody]string value)
+        [HttpPost("likeProject")]
+        public void LikeProject([FromBody]Dictionary<string, string> value)
         {
+            string uid = value["User"];
+            User user = _userRepository.GetUser(uid).Result;
+            user.LikedProjects.Add(value["Project"]);
+            _userRepository.Update(user);
         }
 
         // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        [HttpPost("dismissproject")]
+        public void DismissProject([FromBody]Dictionary<string, string> value)
         {
+            string uid = value["User"];
+            User user = _userRepository.GetUser(uid).Result;
+            user.DismissedProjects.Add(value["Project"]);
+            _userRepository.Update(user);
         }
 
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        [HttpDelete("delete/{uid}")]
+        public void DeleteCollaborator(string uid)
         {
+            _userRepository.Delete(uid);
         }
     }
 }
