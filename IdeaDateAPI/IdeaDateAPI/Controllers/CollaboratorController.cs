@@ -31,7 +31,7 @@ namespace IdeaDateAPI.Controllers
         }
 
         // POST api/values
-        [HttpPost]
+        [HttpPost("likeProject")]
         public void LikeProject([FromBody]Dictionary<string, string> value)
         {
             string uid = value["User"];
@@ -41,13 +41,19 @@ namespace IdeaDateAPI.Controllers
         }
 
         // PUT api/values/5
-        [HttpPost]
+        [HttpPost("dismissproject")]
         public void DismissProject([FromBody]Dictionary<string, string> value)
         {
             string uid = value["User"];
             User user = _userRepository.GetUser(uid).Result;
             user.DismissedProjects.Add(value["Project"]);
             _userRepository.Update(user);
+        }
+
+        [HttpDelete("deletecollaborator/{uid}")]
+        public void DeleteCollaborator(string uid)
+        {
+            _userRepository.Delete(uid);
         }
     }
 }
