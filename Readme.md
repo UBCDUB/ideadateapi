@@ -19,7 +19,7 @@ JSON Object with
 - Tech Stack (List of String)
 
 e.g. call create endpoint for a new user
-```{name: "Will", role: "developer", gh_username: "wjwalcher", desc: "A really cool dude 😎", "c#, java, python, c"}```
+```{"name": "Will", "role": "developer", "gh_username": "wjwalcher", "desc": "A really cool dude 😎", "tech_stack": "c#, java, python, c"}```
 
 Produces: 
 - On success, return code 200 OK (and a UID to store in cookie for quick 'authentication' purposes)
