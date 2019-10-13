@@ -17,5 +17,12 @@ namespace IdeaDateAPI.Models
                 return _mongoDb.GetCollection<User>("Users");
             }
         }
+        public IMongoCollection<Project> Projects
+        {
+            get
+            {
+                return _mongoDb.GetCollection<Project>("Projects");
+            }
+        }
     }
 }
