@@ -8,6 +8,7 @@ Account Creation
 ---
 
 ```/user/create```
+
 Type: POST
 Consumes: 
 JSON Object with 
@@ -25,6 +26,7 @@ Produces:
 - On failure, return code 403 UNAUTHORIZED
 
 ```/user/edit```
+
 Consumes:
 JSON Object containing fields of user to edit/update
 - Name (String)
@@ -42,6 +44,7 @@ Produces:
 - On failure, return code 403 UNAUTHORIZED
 
 ```/user/delete```
+
 Consumes:
 (Hacky and not smart) a 'user id' to delete
 
@@ -55,6 +58,7 @@ Project Management View
 ---
 
 ```/project/create```
+
 Consumes: 
 JSON Object containing
 - Project name (String)
@@ -68,6 +72,7 @@ Produces:
 
 
 ```/project/edit```
+
 Consumes:
 JSON Object containing the fields of edits to be made
 - Project name (String) 
@@ -82,6 +87,7 @@ Produces:
 
 
 ```/project/delete```
+
 Consumes:
 (Again, not smart) Project UID (String)
 
@@ -95,6 +101,7 @@ Collaborator View
 ---
 
 ```/collaborator/getnextproject/{uid}```
+
 Get the next project for a given user. The backend tracks which projects a user has seen so far, and will deliver a new project each time this is called. 
 Type: GET
 Consumes: 
@@ -109,6 +116,7 @@ Produces:
 
 
 ```/collaborator/likeProject```
+
 Type: POST
 Consumes:
 JSON object containing collaborator's UID and project's UID
@@ -122,6 +130,7 @@ Produces:
 - On failure, return status code 403 UNAUTHORIZED
 
 ```/collaborator/dismissProject```
+
 Type: POST
 Consumes:
 JSON object containing collaborator's UID and project's UID
@@ -139,6 +148,7 @@ Recruiting View
 ---
 
 ```/recruiter/getlikes/{projectId}```
+
 Returns a list of the users (and user IDs) of the users that liked the given project
 Type: GET
 Consumes: 
@@ -148,6 +158,7 @@ Produces:
 - On success (status code 200 OK), list of JSON objects containing usernames, GitHub profiles, and UIDs of each user
 
 ```/recruiter/likeUser```
+
 Type: POST
 Consumes: 
 - User ID of the user to like
