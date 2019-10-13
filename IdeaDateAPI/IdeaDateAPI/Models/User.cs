@@ -15,5 +15,7 @@ namespace IdeaDateAPI.Models
         public string GitHub { get; set; }
         public string Description { get; set; }
         public List<string> TechStack { get; set; }
+        public List<string> LikedProjects { get; set; }
+        public List<string> DismissedProjects { get; set; }
     }
 }
