@@ -71,10 +71,10 @@ namespace IdeaDateAPI.Controllers
             var plainTextContent = "";
             var htmlContent = "Hi " + toUser.Name + "!<br>" +
                 fromUser.Name + " wants to collaborate with you on their project, "
-                + "<b>" + p.Name + "</b>.<br>"
+                + "<a href=" + p.GitHubURL + "><b>" + p.Name + "</b></a>.<br>"
                 + "Get in touch with them via the following info to start working:<br>"
                 + "<b>GitHub:</b> " + fromUser.GitHub + "<br>" + "<b>Email:</b> "
-                + fromUser.Email + "<br>"
+                + fromUser.Email + "<br><br>"
                 + "Keep on hacking! <br>Sincerely,<br><i>The IdeaDate Team<i>";
             var msg = MailHelper.CreateSingleEmail(from, to, subject,
                 plainTextContent, htmlContent);
