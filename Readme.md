@@ -107,7 +107,7 @@ Collaborator View
 
 ---
 
-```/api/collaborator/getprojects```
+```/api/collaborator/getprojects/{uid}```
 
 Functional?: ✅ <br>
 Get the next project for a given user. The backend tracks which projects a user has seen so far, and will deliver a new project each time this is called. <br>
