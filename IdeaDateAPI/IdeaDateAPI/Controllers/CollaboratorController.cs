@@ -22,18 +22,19 @@ namespace IdeaDateAPI.Controllers
             _projectRepository = projectRepository;
         }
 
-        [HttpGet("getprojects/{uid}")]
-        public IEnumerable<Project> GetProjects(string uid)
+        [HttpGet("getprojects")]
+        public IEnumerable<Project> GetProjects()
         {
             IEnumerable<Project> res = new List<Project>();
-            User user = _userRepository.GetUser(uid).Result;
+            //User user = _userRepository.GetUser(uid).Result;
             IEnumerable<Project> projects = _projectRepository.GetProjects().Result;
 
             //IEnumerable<Project> sorted = projects.OrderBy(x =>
             //KeywordAnalyzer.ScoreKeywords(x.TechStack, user.TechStack)).Reverse();
 
-            return projects.Where(p => !(user.LikedProjects.Contains(p.UID) ||
-            user.DismissedProjects.Contains(p.UID)));
+            //return projects.Where(p => !(user.LikedProjects.Contains(p.UID) ||
+            //user.DismissedProjects.Contains(p.UID)));
+            return projects;
         }
 
         [HttpPost("likeproject")]
