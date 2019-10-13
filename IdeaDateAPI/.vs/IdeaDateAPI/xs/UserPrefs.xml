@@ -1,4 +1,29 @@
 ﻿<Properties StartupConfiguration="{CF5A1DC6-4C1F-46A7-9F2D-3F16935BEB67}|Default">
-  <MonoDevelop.Ide.ItemProperties.IdeaDateAPI FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.IdeaDateAPI PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="IdeaDateAPI/Controllers/UserController.cs">
+    <Files>
+      <File FileName="IdeaDateAPI/Controllers/UserController.cs" Line="9" Column="34" />
+      <File FileName="IdeaDateAPI/Startup.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="IdeaDateAPI" expanded="True">
+            <Node name="IdeaDateAPI" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="UserController.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

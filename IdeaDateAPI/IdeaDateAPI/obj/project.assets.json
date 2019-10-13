@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.0": []
   },
   "packageFolders": {
-    "/Users/i520380/.nuget/packages/": {}
+    "/Users/williamwalcher/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/i520380/Projects/ideadateapi/IdeaDateAPI/IdeaDateAPI/IdeaDateAPI.csproj",
+      "projectUniqueName": "/Users/williamwalcher/Desktop/ideadateapi/IdeaDateAPI/IdeaDateAPI/IdeaDateAPI.csproj",
       "projectName": "IdeaDateAPI",
-      "projectPath": "/Users/i520380/Projects/ideadateapi/IdeaDateAPI/IdeaDateAPI/IdeaDateAPI.csproj",
-      "packagesPath": "/Users/i520380/.nuget/packages/",
-      "outputPath": "/Users/i520380/Projects/ideadateapi/IdeaDateAPI/IdeaDateAPI/obj/",
+      "projectPath": "/Users/williamwalcher/Desktop/ideadateapi/IdeaDateAPI/IdeaDateAPI/IdeaDateAPI.csproj",
+      "packagesPath": "/Users/williamwalcher/.nuget/packages/",
+      "outputPath": "/Users/williamwalcher/Desktop/ideadateapi/IdeaDateAPI/IdeaDateAPI/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/i520380/.config/NuGet/NuGet.Config"
+        "/Users/williamwalcher/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
