@@ -50,7 +50,7 @@ namespace IdeaDateAPI.Controllers
             _userRepository.Update(user);
         }
 
-        [HttpDelete("deletecollaborator/{uid}")]
+        [HttpDelete("delete/{uid}")]
         public void DeleteCollaborator(string uid)
         {
             _userRepository.Delete(uid);

@@ -46,7 +46,7 @@ namespace IdeaDateAPI.Controllers
         }
 
         // DELETE api/values/5
-        [HttpDelete("delete")]
+        [HttpDelete("delete/{id}")]
         public void Delete(string id)
         {
             _projectRepository.Delete(id);

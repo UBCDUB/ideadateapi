@@ -22,7 +22,10 @@ namespace IdeaDateAPI.Controllers
             _userRepository = userRepository;
         }
 
-        // GET: api/values
+        /// <summary>
+        /// Returns list of all Users
+        /// </summary>
+        /// <returns>All Users</returns>
         [HttpGet]
         public IEnumerable<User> Get()
         {
@@ -30,7 +33,11 @@ namespace IdeaDateAPI.Controllers
             return users;
         }
 
-        // Get user by UID
+        /// <summary>
+        /// Gets user by their uid
+        /// </summary>
+        /// <param name="uid"></param>
+        /// <returns>Specified User</returns>
         [HttpGet("{uid}")]
         public User Get(string uid)
         {
@@ -38,7 +45,11 @@ namespace IdeaDateAPI.Controllers
             return user;
         }
 
-        // Creates a new user 
+        /// <summary>
+        /// Creates a new user with specified properties
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns>UID of created User</returns>
         [HttpPost("create")]
         public ActionResult<String> CreateUser([FromBody] User user)
         {
@@ -48,13 +59,5 @@ namespace IdeaDateAPI.Controllers
 
             return Ok(uid);
         }
-
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-
     }
 }
