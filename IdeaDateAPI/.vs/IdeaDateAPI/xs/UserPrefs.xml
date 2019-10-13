@@ -1,4 +1,5 @@
 ﻿<Properties StartupConfiguration="{CF5A1DC6-4C1F-46A7-9F2D-3F16935BEB67}|Default">
+<<<<<<< HEAD
   <MonoDevelop.Ide.ItemProperties.IdeaDateAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workbench ActiveDocument="IdeaDateAPI/Data/IMongoDbContext.cs">
     <Files>
@@ -9,25 +10,42 @@
       <File FileName="IdeaDateAPI/Data/UserRepository.cs" Line="50" Column="1" />
       <File FileName="IdeaDateAPI/Data/IUserRepository.cs" Line="11" Column="20" />
       <File FileName="IdeaDateAPI/Data/IMongoDbContext.cs" Line="1" Column="1" />
+=======
+  <MonoDevelop.Ide.ItemProperties.IdeaDateAPI PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="IdeaDateAPI/Controllers/UserController.cs">
+    <Files>
+      <File FileName="IdeaDateAPI/Controllers/UserController.cs" Line="9" Column="34" />
+      <File FileName="IdeaDateAPI/Startup.cs" />
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="IdeaDateAPI" expanded="True">
             <Node name="IdeaDateAPI" expanded="True">
+<<<<<<< HEAD
               <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True">
                 <Node name="IUserRepository.cs" selected="True" />
               </Node>
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
+=======
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="UserController.cs" selected="True" />
+              </Node>
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
             </Node>
           </Node>
         </State>
       </Pad>
+<<<<<<< HEAD
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State />
       </Pad>
+=======
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

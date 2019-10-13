@@ -1,8 +1,13 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
+<<<<<<< HEAD
       "/Users/i520380/.dotnet/store/|arch|/|tfm|",
       "/Users/i520380/.nuget/packages"
+=======
+      "/Users/williamwalcher/.dotnet/store/|arch|/|tfm|",
+      "/Users/williamwalcher/.nuget/packages"
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
     ]
   }
 }

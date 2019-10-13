@@ -24,8 +24,11 @@
     ".NETCoreApp,Version=v3.0": {
       "IdeaDateAPI/1.0.0": {
         "dependencies": {
+<<<<<<< HEAD
           "MongoDB.Driver": "2.9.2",
           "Newtonsoft.Json": "12.0.2",
+=======
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
           "Microsoft.AspNetCore.Antiforgery": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.0.0.0",
@@ -151,6 +154,7 @@
           "Microsoft.Net.Http.Headers": "3.0.0.0",
           "Microsoft.VisualBasic.Core": "10.0.4.0",
           "Microsoft.VisualBasic": "10.0.0.0",
+<<<<<<< HEAD
           "Microsoft.Win32.Primitives.Reference": "4.1.1.0",
           "Microsoft.Win32.Registry.Reference": "4.1.2.0",
           "mscorlib": "4.0.0.0",
@@ -170,11 +174,33 @@
           "System.ComponentModel.TypeConverter.Reference": "4.2.1.0",
           "System.Configuration": "4.0.0.0",
           "System.Console.Reference": "4.1.1.0",
+=======
+          "Microsoft.Win32.Primitives": "4.1.1.0",
+          "Microsoft.Win32.Registry": "4.1.2.0",
+          "mscorlib": "4.0.0.0",
+          "netstandard": "2.1.0.0",
+          "System.AppContext": "4.2.1.0",
+          "System.Buffers": "4.0.2.0",
+          "System.Collections.Concurrent": "4.0.14.0",
+          "System.Collections": "4.1.1.0",
+          "System.Collections.Immutable": "1.2.4.0",
+          "System.Collections.NonGeneric": "4.1.1.0",
+          "System.Collections.Specialized": "4.1.1.0",
+          "System.ComponentModel.Annotations": "4.3.0.0",
+          "System.ComponentModel.DataAnnotations": "4.0.0.0",
+          "System.ComponentModel": "4.0.3.0",
+          "System.ComponentModel.EventBasedAsync": "4.1.1.0",
+          "System.ComponentModel.Primitives": "4.2.1.0",
+          "System.ComponentModel.TypeConverter": "4.2.1.0",
+          "System.Configuration": "4.0.0.0",
+          "System.Console": "4.1.1.0",
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
           "System.Core": "4.0.0.0",
           "System.Data.Common": "4.2.1.0",
           "System.Data.DataSetExtensions": "4.0.0.0",
           "System.Data": "4.0.0.0",
           "System.Diagnostics.Contracts": "4.0.3.0",
+<<<<<<< HEAD
           "System.Diagnostics.Debug.Reference": "4.1.1.0",
           "System.Diagnostics.DiagnosticSource.Reference": "4.0.4.0",
           "System.Diagnostics.EventLog": "4.0.1.0",
@@ -200,12 +226,40 @@
           "System.IO.FileSystem.Reference": "4.1.1.0",
           "System.IO.FileSystem.DriveInfo": "4.1.1.0",
           "System.IO.FileSystem.Primitives.Reference": "4.1.1.0",
+=======
+          "System.Diagnostics.Debug": "4.1.1.0",
+          "System.Diagnostics.DiagnosticSource": "4.0.4.0",
+          "System.Diagnostics.EventLog": "4.0.1.0",
+          "System.Diagnostics.FileVersionInfo": "4.0.3.0",
+          "System.Diagnostics.Process": "4.2.1.0",
+          "System.Diagnostics.StackTrace": "4.1.1.0",
+          "System.Diagnostics.TextWriterTraceListener": "4.1.1.0",
+          "System.Diagnostics.Tools": "4.1.1.0",
+          "System.Diagnostics.TraceSource": "4.1.1.0",
+          "System.Diagnostics.Tracing": "4.2.1.0",
+          "System": "4.0.0.0",
+          "System.Drawing": "4.0.0.0",
+          "System.Drawing.Primitives": "4.2.0.0",
+          "System.Dynamic.Runtime": "4.1.1.0",
+          "System.Globalization.Calendars": "4.1.1.0",
+          "System.Globalization": "4.1.1.0",
+          "System.Globalization.Extensions": "4.1.1.0",
+          "System.IO.Compression.Brotli": "4.2.1.0",
+          "System.IO.Compression": "4.2.1.0",
+          "System.IO.Compression.FileSystem": "4.0.0.0",
+          "System.IO.Compression.ZipFile": "4.0.4.0",
+          "System.IO": "4.2.1.0",
+          "System.IO.FileSystem": "4.1.1.0",
+          "System.IO.FileSystem.DriveInfo": "4.1.1.0",
+          "System.IO.FileSystem.Primitives": "4.1.1.0",
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
           "System.IO.FileSystem.Watcher": "4.1.1.0",
           "System.IO.IsolatedStorage": "4.1.1.0",
           "System.IO.MemoryMappedFiles": "4.1.1.0",
           "System.IO.Pipelines": "4.0.1.0",
           "System.IO.Pipes": "4.1.1.0",
           "System.IO.UnmanagedMemoryStream": "4.1.1.0",
+<<<<<<< HEAD
           "System.Linq.Reference": "4.2.1.0",
           "System.Linq.Expressions.Reference": "4.2.1.0",
           "System.Linq.Parallel": "4.0.3.0",
@@ -223,6 +277,25 @@
           "System.Net.Security.Reference": "4.1.1.0",
           "System.Net.ServicePoint": "4.0.1.0",
           "System.Net.Sockets.Reference": "4.2.1.0",
+=======
+          "System.Linq": "4.2.1.0",
+          "System.Linq.Expressions": "4.2.1.0",
+          "System.Linq.Parallel": "4.0.3.0",
+          "System.Linq.Queryable": "4.0.3.0",
+          "System.Memory": "4.2.0.0",
+          "System.Net": "4.0.0.0",
+          "System.Net.Http": "4.2.1.0",
+          "System.Net.HttpListener": "4.0.1.0",
+          "System.Net.Mail": "4.0.1.0",
+          "System.Net.NameResolution": "4.1.1.0",
+          "System.Net.NetworkInformation": "4.2.1.0",
+          "System.Net.Ping": "4.1.1.0",
+          "System.Net.Primitives": "4.1.1.0",
+          "System.Net.Requests": "4.1.1.0",
+          "System.Net.Security": "4.1.1.0",
+          "System.Net.ServicePoint": "4.0.1.0",
+          "System.Net.Sockets": "4.2.1.0",
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
           "System.Net.WebClient": "4.0.1.0",
           "System.Net.WebHeaderCollection": "4.1.1.0",
           "System.Net.WebProxy": "4.0.1.0",
@@ -230,6 +303,7 @@
           "System.Net.WebSockets": "4.1.1.0",
           "System.Numerics": "4.0.0.0",
           "System.Numerics.Vectors": "4.1.5.0",
+<<<<<<< HEAD
           "System.ObjectModel.Reference": "4.1.1.0",
           "System.Reflection.DispatchProxy": "4.0.5.0",
           "System.Reflection.Reference": "4.2.1.0",
@@ -291,6 +365,69 @@
           "System.Threading.Thread.Reference": "4.1.1.0",
           "System.Threading.ThreadPool.Reference": "4.1.1.0",
           "System.Threading.Timer.Reference": "4.1.1.0",
+=======
+          "System.ObjectModel": "4.1.1.0",
+          "System.Reflection.DispatchProxy": "4.0.5.0",
+          "System.Reflection": "4.2.1.0",
+          "System.Reflection.Emit": "4.1.1.0",
+          "System.Reflection.Emit.ILGeneration": "4.1.0.0",
+          "System.Reflection.Emit.Lightweight": "4.1.0.0",
+          "System.Reflection.Extensions": "4.1.1.0",
+          "System.Reflection.Metadata": "1.4.4.0",
+          "System.Reflection.Primitives": "4.1.1.0",
+          "System.Reflection.TypeExtensions": "4.1.2.0",
+          "System.Resources.Reader": "4.1.1.0",
+          "System.Resources.ResourceManager": "4.1.1.0",
+          "System.Resources.Writer": "4.1.1.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.0.5.0",
+          "System.Runtime.CompilerServices.VisualC": "4.1.1.0",
+          "System.Runtime": "4.2.1.0",
+          "System.Runtime.Extensions": "4.2.1.0",
+          "System.Runtime.Handles": "4.1.1.0",
+          "System.Runtime.InteropServices": "4.2.1.0",
+          "System.Runtime.InteropServices.RuntimeInformation": "4.0.3.0",
+          "System.Runtime.InteropServices.WindowsRuntime": "4.0.3.0",
+          "System.Runtime.Intrinsics": "4.0.0.0",
+          "System.Runtime.Loader": "4.1.0.0",
+          "System.Runtime.Numerics": "4.1.1.0",
+          "System.Runtime.Serialization": "4.0.0.0",
+          "System.Runtime.Serialization.Formatters": "4.0.3.0",
+          "System.Runtime.Serialization.Json": "4.0.4.0",
+          "System.Runtime.Serialization.Primitives": "4.2.1.0",
+          "System.Runtime.Serialization.Xml": "4.1.4.0",
+          "System.Security.AccessControl": "4.1.1.0",
+          "System.Security.Claims": "4.1.1.0",
+          "System.Security.Cryptography.Algorithms": "4.3.1.0",
+          "System.Security.Cryptography.Cng": "4.3.2.0",
+          "System.Security.Cryptography.Csp": "4.1.1.0",
+          "System.Security.Cryptography.Encoding": "4.1.1.0",
+          "System.Security.Cryptography.Primitives": "4.1.1.0",
+          "System.Security.Cryptography.X509Certificates": "4.2.1.0",
+          "System.Security.Cryptography.Xml": "4.0.2.0",
+          "System.Security": "4.0.0.0",
+          "System.Security.Permissions": "4.0.2.0",
+          "System.Security.Principal": "4.1.1.0",
+          "System.Security.Principal.Windows": "4.1.1.0",
+          "System.Security.SecureString": "4.1.1.0",
+          "System.ServiceModel.Web": "4.0.0.0",
+          "System.ServiceProcess": "4.0.0.0",
+          "System.Text.Encoding.CodePages": "4.1.2.0",
+          "System.Text.Encoding": "4.1.1.0",
+          "System.Text.Encoding.Extensions": "4.1.1.0",
+          "System.Text.Encodings.Web": "4.0.4.0",
+          "System.Text.Json": "4.0.0.0",
+          "System.Text.RegularExpressions": "4.2.1.0",
+          "System.Threading.Channels": "4.0.1.0",
+          "System.Threading": "4.1.1.0",
+          "System.Threading.Overlapped": "4.1.1.0",
+          "System.Threading.Tasks.Dataflow": "4.6.4.0",
+          "System.Threading.Tasks": "4.1.1.0",
+          "System.Threading.Tasks.Extensions": "4.3.0.0",
+          "System.Threading.Tasks.Parallel": "4.0.3.0",
+          "System.Threading.Thread": "4.1.1.0",
+          "System.Threading.ThreadPool": "4.1.1.0",
+          "System.Threading.Timer": "4.1.1.0",
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
           "System.Transactions": "4.0.0.0",
           "System.Transactions.Local": "4.0.1.0",
           "System.ValueTuple": "4.0.3.0",
@@ -300,9 +437,15 @@
           "System.Windows.Extensions": "4.0.0.0",
           "System.Xml": "4.0.0.0",
           "System.Xml.Linq": "4.0.0.0",
+<<<<<<< HEAD
           "System.Xml.ReaderWriter.Reference": "4.2.1.0",
           "System.Xml.Serialization": "4.0.0.0",
           "System.Xml.XDocument.Reference": "4.1.1.0",
+=======
+          "System.Xml.ReaderWriter": "4.2.1.0",
+          "System.Xml.Serialization": "4.0.0.0",
+          "System.Xml.XDocument": "4.1.1.0",
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
           "System.Xml.XmlDocument": "4.1.1.0",
           "System.Xml.XmlSerializer": "4.1.1.0",
           "System.Xml.XPath": "4.1.1.0",
@@ -316,6 +459,7 @@
           "IdeaDateAPI.dll": {}
         }
       },
+<<<<<<< HEAD
       "DnsClient/1.2.0": {
         "dependencies": {
           "System.Buffers": "4.4.0"
@@ -1352,6 +1496,8 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
+=======
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "Microsoft.AspNetCore.Antiforgery/3.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Antiforgery.dll": {}
@@ -2102,13 +2248,21 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "Microsoft.Win32.Primitives.Reference/4.1.1.0": {
+=======
+      "Microsoft.Win32.Primitives/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "Microsoft.Win32.Primitives.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "Microsoft.Win32.Registry.Reference/4.1.2.0": {
+=======
+      "Microsoft.Win32.Registry/4.1.2.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "Microsoft.Win32.Registry.dll": {}
         },
@@ -2126,25 +2280,41 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.AppContext.Reference/4.2.1.0": {
+=======
+      "System.AppContext/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.AppContext.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Buffers.Reference/4.0.2.0": {
+=======
+      "System.Buffers/4.0.2.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Buffers.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Collections.Concurrent.Reference/4.0.14.0": {
+=======
+      "System.Collections.Concurrent/4.0.14.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Collections.Concurrent.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Collections.Reference/4.1.1.0": {
+=======
+      "System.Collections/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Collections.dll": {}
         },
@@ -2156,13 +2326,21 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Collections.NonGeneric.Reference/4.1.1.0": {
+=======
+      "System.Collections.NonGeneric/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Collections.NonGeneric.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Collections.Specialized.Reference/4.1.1.0": {
+=======
+      "System.Collections.Specialized/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Collections.Specialized.dll": {}
         },
@@ -2180,7 +2358,11 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.ComponentModel.Reference/4.0.3.0": {
+=======
+      "System.ComponentModel/4.0.3.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.ComponentModel.dll": {}
         },
@@ -2192,13 +2374,21 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.ComponentModel.Primitives.Reference/4.2.1.0": {
+=======
+      "System.ComponentModel.Primitives/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.ComponentModel.Primitives.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.ComponentModel.TypeConverter.Reference/4.2.1.0": {
+=======
+      "System.ComponentModel.TypeConverter/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.ComponentModel.TypeConverter.dll": {}
         },
@@ -2210,7 +2400,11 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Console.Reference/4.1.1.0": {
+=======
+      "System.Console/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Console.dll": {}
         },
@@ -2246,13 +2440,21 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Diagnostics.Debug.Reference/4.1.1.0": {
+=======
+      "System.Diagnostics.Debug/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Diagnostics.Debug.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Diagnostics.DiagnosticSource.Reference/4.0.4.0": {
+=======
+      "System.Diagnostics.DiagnosticSource/4.0.4.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Diagnostics.DiagnosticSource.dll": {}
         },
@@ -2270,7 +2472,11 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Diagnostics.Process.Reference/4.2.1.0": {
+=======
+      "System.Diagnostics.Process/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Diagnostics.Process.dll": {}
         },
@@ -2282,25 +2488,41 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Diagnostics.TextWriterTraceListener.Reference/4.1.1.0": {
+=======
+      "System.Diagnostics.TextWriterTraceListener/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Diagnostics.TextWriterTraceListener.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Diagnostics.Tools.Reference/4.1.1.0": {
+=======
+      "System.Diagnostics.Tools/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Diagnostics.Tools.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Diagnostics.TraceSource.Reference/4.1.1.0": {
+=======
+      "System.Diagnostics.TraceSource/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Diagnostics.TraceSource.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Diagnostics.Tracing.Reference/4.2.1.0": {
+=======
+      "System.Diagnostics.Tracing/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Diagnostics.Tracing.dll": {}
         },
@@ -2324,25 +2546,41 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Dynamic.Runtime.Reference/4.1.1.0": {
+=======
+      "System.Dynamic.Runtime/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Dynamic.Runtime.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Globalization.Calendars.Reference/4.1.1.0": {
+=======
+      "System.Globalization.Calendars/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Globalization.Calendars.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Globalization.Reference/4.1.1.0": {
+=======
+      "System.Globalization/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Globalization.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Globalization.Extensions.Reference/4.1.1.0": {
+=======
+      "System.Globalization.Extensions/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Globalization.Extensions.dll": {}
         },
@@ -2354,7 +2592,11 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.IO.Compression.Reference/4.2.1.0": {
+=======
+      "System.IO.Compression/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.IO.Compression.dll": {}
         },
@@ -2366,19 +2608,31 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.IO.Compression.ZipFile.Reference/4.0.4.0": {
+=======
+      "System.IO.Compression.ZipFile/4.0.4.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.IO.Compression.ZipFile.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.IO.Reference/4.2.1.0": {
+=======
+      "System.IO/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.IO.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.IO.FileSystem.Reference/4.1.1.0": {
+=======
+      "System.IO.FileSystem/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.IO.FileSystem.dll": {}
         },
@@ -2390,7 +2644,11 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.IO.FileSystem.Primitives.Reference/4.1.1.0": {
+=======
+      "System.IO.FileSystem.Primitives/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.IO.FileSystem.Primitives.dll": {}
         },
@@ -2432,13 +2690,21 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Linq.Reference/4.2.1.0": {
+=======
+      "System.Linq/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Linq.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Linq.Expressions.Reference/4.2.1.0": {
+=======
+      "System.Linq.Expressions/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Linq.Expressions.dll": {}
         },
@@ -2450,7 +2716,11 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Linq.Queryable.Reference/4.0.3.0": {
+=======
+      "System.Linq.Queryable/4.0.3.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Linq.Queryable.dll": {}
         },
@@ -2468,7 +2738,11 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Net.Http.Reference/4.2.1.0": {
+=======
+      "System.Net.Http/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Net.Http.dll": {}
         },
@@ -2486,7 +2760,11 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Net.NameResolution.Reference/4.1.1.0": {
+=======
+      "System.Net.NameResolution/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Net.NameResolution.dll": {}
         },
@@ -2504,7 +2782,11 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Net.Primitives.Reference/4.1.1.0": {
+=======
+      "System.Net.Primitives/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Net.Primitives.dll": {}
         },
@@ -2516,7 +2798,11 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Net.Security.Reference/4.1.1.0": {
+=======
+      "System.Net.Security/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Net.Security.dll": {}
         },
@@ -2528,7 +2814,11 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Net.Sockets.Reference/4.2.1.0": {
+=======
+      "System.Net.Sockets/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Net.Sockets.dll": {}
         },
@@ -2576,7 +2866,11 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.ObjectModel.Reference/4.1.1.0": {
+=======
+      "System.ObjectModel/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.ObjectModel.dll": {}
         },
@@ -2588,31 +2882,51 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Reflection.Reference/4.2.1.0": {
+=======
+      "System.Reflection/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Reflection.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Reflection.Emit.Reference/4.1.1.0": {
+=======
+      "System.Reflection.Emit/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Reflection.Emit.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Reflection.Emit.ILGeneration.Reference/4.1.0.0": {
+=======
+      "System.Reflection.Emit.ILGeneration/4.1.0.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Reflection.Emit.ILGeneration.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Reflection.Emit.Lightweight.Reference/4.1.0.0": {
+=======
+      "System.Reflection.Emit.Lightweight/4.1.0.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Reflection.Emit.Lightweight.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Reflection.Extensions.Reference/4.1.1.0": {
+=======
+      "System.Reflection.Extensions/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Reflection.Extensions.dll": {}
         },
@@ -2624,13 +2938,21 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Reflection.Primitives.Reference/4.1.1.0": {
+=======
+      "System.Reflection.Primitives/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Reflection.Primitives.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Reflection.TypeExtensions.Reference/4.1.2.0": {
+=======
+      "System.Reflection.TypeExtensions/4.1.2.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Reflection.TypeExtensions.dll": {}
         },
@@ -2642,7 +2964,11 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Resources.ResourceManager.Reference/4.1.1.0": {
+=======
+      "System.Resources.ResourceManager/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Resources.ResourceManager.dll": {}
         },
@@ -2654,7 +2980,11 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Runtime.CompilerServices.Unsafe.Reference/4.0.5.0": {
+=======
+      "System.Runtime.CompilerServices.Unsafe/4.0.5.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Runtime.CompilerServices.Unsafe.dll": {}
         },
@@ -2666,31 +2996,51 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Runtime.Reference/4.2.1.0": {
+=======
+      "System.Runtime/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Runtime.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Runtime.Extensions.Reference/4.2.1.0": {
+=======
+      "System.Runtime.Extensions/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Runtime.Extensions.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Runtime.Handles.Reference/4.1.1.0": {
+=======
+      "System.Runtime.Handles/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Runtime.Handles.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Runtime.InteropServices.Reference/4.2.1.0": {
+=======
+      "System.Runtime.InteropServices/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Runtime.InteropServices.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Runtime.InteropServices.RuntimeInformation.Reference/4.0.3.0": {
+=======
+      "System.Runtime.InteropServices.RuntimeInformation/4.0.3.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Runtime.InteropServices.RuntimeInformation.dll": {}
         },
@@ -2714,7 +3064,11 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Runtime.Numerics.Reference/4.1.1.0": {
+=======
+      "System.Runtime.Numerics/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Runtime.Numerics.dll": {}
         },
@@ -2726,7 +3080,11 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Runtime.Serialization.Formatters.Reference/4.0.3.0": {
+=======
+      "System.Runtime.Serialization.Formatters/4.0.3.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Runtime.Serialization.Formatters.dll": {}
         },
@@ -2738,7 +3096,11 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Runtime.Serialization.Primitives.Reference/4.2.1.0": {
+=======
+      "System.Runtime.Serialization.Primitives/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Runtime.Serialization.Primitives.dll": {}
         },
@@ -2756,43 +3118,71 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Security.Claims.Reference/4.1.1.0": {
+=======
+      "System.Security.Claims/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Security.Claims.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Security.Cryptography.Algorithms.Reference/4.3.1.0": {
+=======
+      "System.Security.Cryptography.Algorithms/4.3.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Security.Cryptography.Algorithms.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Security.Cryptography.Cng.Reference/4.3.2.0": {
+=======
+      "System.Security.Cryptography.Cng/4.3.2.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Security.Cryptography.Cng.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Security.Cryptography.Csp.Reference/4.1.1.0": {
+=======
+      "System.Security.Cryptography.Csp/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Security.Cryptography.Csp.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Security.Cryptography.Encoding.Reference/4.1.1.0": {
+=======
+      "System.Security.Cryptography.Encoding/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Security.Cryptography.Encoding.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Security.Cryptography.Primitives.Reference/4.1.1.0": {
+=======
+      "System.Security.Cryptography.Primitives/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Security.Cryptography.Primitives.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Security.Cryptography.X509Certificates.Reference/4.2.1.0": {
+=======
+      "System.Security.Cryptography.X509Certificates/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Security.Cryptography.X509Certificates.dll": {}
         },
@@ -2816,19 +3206,31 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Security.Principal.Reference/4.1.1.0": {
+=======
+      "System.Security.Principal/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Security.Principal.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Security.Principal.Windows.Reference/4.1.1.0": {
+=======
+      "System.Security.Principal.Windows/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Security.Principal.Windows.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Security.SecureString.Reference/4.1.1.0": {
+=======
+      "System.Security.SecureString/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Security.SecureString.dll": {}
         },
@@ -2846,19 +3248,31 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Text.Encoding.CodePages.Reference/4.1.2.0": {
+=======
+      "System.Text.Encoding.CodePages/4.1.2.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Text.Encoding.CodePages.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Text.Encoding.Reference/4.1.1.0": {
+=======
+      "System.Text.Encoding/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Text.Encoding.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Text.Encoding.Extensions.Reference/4.1.1.0": {
+=======
+      "System.Text.Encoding.Extensions/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Text.Encoding.Extensions.dll": {}
         },
@@ -2876,7 +3290,11 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Text.RegularExpressions.Reference/4.2.1.0": {
+=======
+      "System.Text.RegularExpressions/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Text.RegularExpressions.dll": {}
         },
@@ -2888,7 +3306,11 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Threading.Reference/4.1.1.0": {
+=======
+      "System.Threading/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Threading.dll": {}
         },
@@ -2906,13 +3328,21 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Threading.Tasks.Reference/4.1.1.0": {
+=======
+      "System.Threading.Tasks/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Threading.Tasks.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Threading.Tasks.Extensions.Reference/4.3.0.0": {
+=======
+      "System.Threading.Tasks.Extensions/4.3.0.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Threading.Tasks.Extensions.dll": {}
         },
@@ -2924,19 +3354,31 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Threading.Thread.Reference/4.1.1.0": {
+=======
+      "System.Threading.Thread/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Threading.Thread.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Threading.ThreadPool.Reference/4.1.1.0": {
+=======
+      "System.Threading.ThreadPool/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Threading.ThreadPool.dll": {}
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Threading.Timer.Reference/4.1.1.0": {
+=======
+      "System.Threading.Timer/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Threading.Timer.dll": {}
         },
@@ -2996,7 +3438,11 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Xml.ReaderWriter.Reference/4.2.1.0": {
+=======
+      "System.Xml.ReaderWriter/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Xml.ReaderWriter.dll": {}
         },
@@ -3008,7 +3454,11 @@
         },
         "compileOnly": true
       },
+<<<<<<< HEAD
       "System.Xml.XDocument.Reference/4.1.1.0": {
+=======
+      "System.Xml.XDocument/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
         "compile": {
           "System.Xml.XDocument.dll": {}
         },
@@ -3052,6 +3502,7 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "DnsClient/1.2.0": {
       "type": "package",
       "serviceable": true,
@@ -3773,6 +4224,8 @@
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
+=======
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
     "Microsoft.AspNetCore.Antiforgery/3.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
@@ -4398,12 +4851,20 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "Microsoft.Win32.Primitives.Reference/4.1.1.0": {
+=======
+    "Microsoft.Win32.Primitives/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "Microsoft.Win32.Registry.Reference/4.1.2.0": {
+=======
+    "Microsoft.Win32.Registry/4.1.2.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4418,22 +4879,38 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.AppContext.Reference/4.2.1.0": {
+=======
+    "System.AppContext/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Buffers.Reference/4.0.2.0": {
+=======
+    "System.Buffers/4.0.2.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Collections.Concurrent.Reference/4.0.14.0": {
+=======
+    "System.Collections.Concurrent/4.0.14.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Collections.Reference/4.1.1.0": {
+=======
+    "System.Collections/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4443,12 +4920,20 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Collections.NonGeneric.Reference/4.1.1.0": {
+=======
+    "System.Collections.NonGeneric/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Collections.Specialized.Reference/4.1.1.0": {
+=======
+    "System.Collections.Specialized/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4463,7 +4948,11 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.ComponentModel.Reference/4.0.3.0": {
+=======
+    "System.ComponentModel/4.0.3.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4473,12 +4962,20 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.ComponentModel.Primitives.Reference/4.2.1.0": {
+=======
+    "System.ComponentModel.Primitives/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.ComponentModel.TypeConverter.Reference/4.2.1.0": {
+=======
+    "System.ComponentModel.TypeConverter/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4488,7 +4985,11 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Console.Reference/4.1.1.0": {
+=======
+    "System.Console/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4518,12 +5019,20 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Diagnostics.Debug.Reference/4.1.1.0": {
+=======
+    "System.Diagnostics.Debug/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Diagnostics.DiagnosticSource.Reference/4.0.4.0": {
+=======
+    "System.Diagnostics.DiagnosticSource/4.0.4.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4538,7 +5047,11 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Diagnostics.Process.Reference/4.2.1.0": {
+=======
+    "System.Diagnostics.Process/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4548,22 +5061,38 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Diagnostics.TextWriterTraceListener.Reference/4.1.1.0": {
+=======
+    "System.Diagnostics.TextWriterTraceListener/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Diagnostics.Tools.Reference/4.1.1.0": {
+=======
+    "System.Diagnostics.Tools/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Diagnostics.TraceSource.Reference/4.1.1.0": {
+=======
+    "System.Diagnostics.TraceSource/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Diagnostics.Tracing.Reference/4.2.1.0": {
+=======
+    "System.Diagnostics.Tracing/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4583,22 +5112,38 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Dynamic.Runtime.Reference/4.1.1.0": {
+=======
+    "System.Dynamic.Runtime/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Globalization.Calendars.Reference/4.1.1.0": {
+=======
+    "System.Globalization.Calendars/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Globalization.Reference/4.1.1.0": {
+=======
+    "System.Globalization/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Globalization.Extensions.Reference/4.1.1.0": {
+=======
+    "System.Globalization.Extensions/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4608,7 +5153,11 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.IO.Compression.Reference/4.2.1.0": {
+=======
+    "System.IO.Compression/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4618,17 +5167,29 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.IO.Compression.ZipFile.Reference/4.0.4.0": {
+=======
+    "System.IO.Compression.ZipFile/4.0.4.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.IO.Reference/4.2.1.0": {
+=======
+    "System.IO/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.IO.FileSystem.Reference/4.1.1.0": {
+=======
+    "System.IO.FileSystem/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4638,7 +5199,11 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.IO.FileSystem.Primitives.Reference/4.1.1.0": {
+=======
+    "System.IO.FileSystem.Primitives/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4673,12 +5238,20 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Linq.Reference/4.2.1.0": {
+=======
+    "System.Linq/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Linq.Expressions.Reference/4.2.1.0": {
+=======
+    "System.Linq.Expressions/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4688,7 +5261,11 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Linq.Queryable.Reference/4.0.3.0": {
+=======
+    "System.Linq.Queryable/4.0.3.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4703,7 +5280,11 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Net.Http.Reference/4.2.1.0": {
+=======
+    "System.Net.Http/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4718,7 +5299,11 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Net.NameResolution.Reference/4.1.1.0": {
+=======
+    "System.Net.NameResolution/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4733,7 +5318,11 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Net.Primitives.Reference/4.1.1.0": {
+=======
+    "System.Net.Primitives/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4743,7 +5332,11 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Net.Security.Reference/4.1.1.0": {
+=======
+    "System.Net.Security/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4753,7 +5346,11 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Net.Sockets.Reference/4.2.1.0": {
+=======
+    "System.Net.Sockets/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4793,7 +5390,11 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.ObjectModel.Reference/4.1.1.0": {
+=======
+    "System.ObjectModel/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4803,27 +5404,47 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Reflection.Reference/4.2.1.0": {
+=======
+    "System.Reflection/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Reflection.Emit.Reference/4.1.1.0": {
+=======
+    "System.Reflection.Emit/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Reflection.Emit.ILGeneration.Reference/4.1.0.0": {
+=======
+    "System.Reflection.Emit.ILGeneration/4.1.0.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Reflection.Emit.Lightweight.Reference/4.1.0.0": {
+=======
+    "System.Reflection.Emit.Lightweight/4.1.0.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Reflection.Extensions.Reference/4.1.1.0": {
+=======
+    "System.Reflection.Extensions/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4833,12 +5454,20 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Reflection.Primitives.Reference/4.1.1.0": {
+=======
+    "System.Reflection.Primitives/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Reflection.TypeExtensions.Reference/4.1.2.0": {
+=======
+    "System.Reflection.TypeExtensions/4.1.2.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4848,7 +5477,11 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Resources.ResourceManager.Reference/4.1.1.0": {
+=======
+    "System.Resources.ResourceManager/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4858,7 +5491,11 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Runtime.CompilerServices.Unsafe.Reference/4.0.5.0": {
+=======
+    "System.Runtime.CompilerServices.Unsafe/4.0.5.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4868,27 +5505,47 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Runtime.Reference/4.2.1.0": {
+=======
+    "System.Runtime/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Runtime.Extensions.Reference/4.2.1.0": {
+=======
+    "System.Runtime.Extensions/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Runtime.Handles.Reference/4.1.1.0": {
+=======
+    "System.Runtime.Handles/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Runtime.InteropServices.Reference/4.2.1.0": {
+=======
+    "System.Runtime.InteropServices/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Runtime.InteropServices.RuntimeInformation.Reference/4.0.3.0": {
+=======
+    "System.Runtime.InteropServices.RuntimeInformation/4.0.3.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4908,7 +5565,11 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Runtime.Numerics.Reference/4.1.1.0": {
+=======
+    "System.Runtime.Numerics/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4918,7 +5579,11 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Runtime.Serialization.Formatters.Reference/4.0.3.0": {
+=======
+    "System.Runtime.Serialization.Formatters/4.0.3.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4928,7 +5593,11 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Runtime.Serialization.Primitives.Reference/4.2.1.0": {
+=======
+    "System.Runtime.Serialization.Primitives/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4943,37 +5612,65 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Security.Claims.Reference/4.1.1.0": {
+=======
+    "System.Security.Claims/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Security.Cryptography.Algorithms.Reference/4.3.1.0": {
+=======
+    "System.Security.Cryptography.Algorithms/4.3.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Security.Cryptography.Cng.Reference/4.3.2.0": {
+=======
+    "System.Security.Cryptography.Cng/4.3.2.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Security.Cryptography.Csp.Reference/4.1.1.0": {
+=======
+    "System.Security.Cryptography.Csp/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Security.Cryptography.Encoding.Reference/4.1.1.0": {
+=======
+    "System.Security.Cryptography.Encoding/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Security.Cryptography.Primitives.Reference/4.1.1.0": {
+=======
+    "System.Security.Cryptography.Primitives/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Security.Cryptography.X509Certificates.Reference/4.2.1.0": {
+=======
+    "System.Security.Cryptography.X509Certificates/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4993,17 +5690,29 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Security.Principal.Reference/4.1.1.0": {
+=======
+    "System.Security.Principal/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Security.Principal.Windows.Reference/4.1.1.0": {
+=======
+    "System.Security.Principal.Windows/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Security.SecureString.Reference/4.1.1.0": {
+=======
+    "System.Security.SecureString/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -5018,17 +5727,29 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Text.Encoding.CodePages.Reference/4.1.2.0": {
+=======
+    "System.Text.Encoding.CodePages/4.1.2.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Text.Encoding.Reference/4.1.1.0": {
+=======
+    "System.Text.Encoding/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Text.Encoding.Extensions.Reference/4.1.1.0": {
+=======
+    "System.Text.Encoding.Extensions/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -5043,7 +5764,11 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Text.RegularExpressions.Reference/4.2.1.0": {
+=======
+    "System.Text.RegularExpressions/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -5053,7 +5778,11 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Threading.Reference/4.1.1.0": {
+=======
+    "System.Threading/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -5068,12 +5797,20 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Threading.Tasks.Reference/4.1.1.0": {
+=======
+    "System.Threading.Tasks/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Threading.Tasks.Extensions.Reference/4.3.0.0": {
+=======
+    "System.Threading.Tasks.Extensions/4.3.0.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -5083,17 +5820,29 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Threading.Thread.Reference/4.1.1.0": {
+=======
+    "System.Threading.Thread/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Threading.ThreadPool.Reference/4.1.1.0": {
+=======
+    "System.Threading.ThreadPool/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Threading.Timer.Reference/4.1.1.0": {
+=======
+    "System.Threading.Timer/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -5143,7 +5892,11 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Xml.ReaderWriter.Reference/4.2.1.0": {
+=======
+    "System.Xml.ReaderWriter/4.2.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -5153,7 +5906,11 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
     "System.Xml.XDocument.Reference/4.1.1.0": {
+=======
+    "System.Xml.XDocument/4.1.1.0": {
+>>>>>>> e84919ce990f67be1d2f3d138a5f9cc7806a604e
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
