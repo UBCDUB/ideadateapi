@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using IdeaDateAPI.Models;
+using IdeaDateAPI.Util;
 using Microsoft.AspNetCore.Mvc;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace IdeaDateAPI.Controllers
 {
@@ -15,7 +15,8 @@ namespace IdeaDateAPI.Controllers
         private readonly IUserRepository _userRepository;
         private readonly IProjectRepository _projectRepository;
 
-        public CollaboratorController(IUserRepository userRepository, IProjectRepository projectRepository)
+        public CollaboratorController(IUserRepository userRepository,
+            IProjectRepository projectRepository)
         {
             _userRepository = userRepository;
             _projectRepository = projectRepository;
@@ -27,7 +28,12 @@ namespace IdeaDateAPI.Controllers
             IEnumerable<Project> res = new List<Project>();
             User user = _userRepository.GetUser(uid).Result;
             IEnumerable<Project> projects = _projectRepository.GetProjects().Result;
-            return projects.Where(p => !(user.LikedProjects.Contains(p.UID) || user.DismissedProjects.Contains(p.UID)));
+
+            IEnumerable<Project> sorted = projects.OrderBy(x =>
+            KeywordAnalyzer.ScoreKeywords(x.TechStack, user.TechStack)).Reverse();
+
+            return sorted.Where(p => !(user.LikedProjects.Contains(p.UID) ||
+            user.DismissedProjects.Contains(p.UID)));
         }
 
         [HttpPost("likeproject")]

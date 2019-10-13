@@ -62,7 +62,7 @@ namespace IdeaDateAPI.Controllers
 
         static async Task SendMail(User fromUser, User toUser, Project p)
         {
-            var apiKey = "<API_KEY_HERE>";
+            var apiKey = Environment.GetEnvironmentVariable("SENDGRID_API_KEY");
             Console.WriteLine("SG API Key: " + apiKey);
             var client = new SendGridClient(apiKey);
             var from = new EmailAddress("test@example.com", "IdeaDate Service");
@@ -71,10 +71,13 @@ namespace IdeaDateAPI.Controllers
             var plainTextContent = "";
             var htmlContent = "Hi " + toUser.Name + "!<br>" +
                 fromUser.Name + " wants to collaborate with you on their project, "
-                + "<b>" + p.Name + "</b>.<br>" + "Get in touch with them via the following info to start working:<br>"
-                + "<b>GitHub:</b> " + fromUser.GitHub + "<br>" + "<b>Email:</b> " + fromUser.Email + "<br>"
+                + "<b>" + p.Name + "</b>.<br>"
+                + "Get in touch with them via the following info to start working:<br>"
+                + "<b>GitHub:</b> " + fromUser.GitHub + "<br>" + "<b>Email:</b> "
+                + fromUser.Email + "<br>"
                 + "Keep on hacking! <br>Sincerely,<br><i>The IdeaDate Team<i>";
-            var msg = MailHelper.CreateSingleEmail(from, to, subject, plainTextContent, htmlContent);
+            var msg = MailHelper.CreateSingleEmail(from, to, subject,
+                plainTextContent, htmlContent);
             var response = await client.SendEmailAsync(msg);
             Console.WriteLine("Status code: " + response.StatusCode);
         }
