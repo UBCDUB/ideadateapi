@@ -29,10 +29,10 @@ namespace IdeaDateAPI.Controllers
             User user = _userRepository.GetUser(uid).Result;
             IEnumerable<Project> projects = _projectRepository.GetProjects().Result;
 
-            IEnumerable<Project> sorted = projects.OrderBy(x =>
-            KeywordAnalyzer.ScoreKeywords(x.TechStack, user.TechStack)).Reverse();
+            //IEnumerable<Project> sorted = projects.OrderBy(x =>
+            //KeywordAnalyzer.ScoreKeywords(x.TechStack, user.TechStack)).Reverse();
 
-            return sorted.Where(p => !(user.LikedProjects.Contains(p.UID) ||
+            return projects.Where(p => !(user.LikedProjects.Contains(p.UID) ||
             user.DismissedProjects.Contains(p.UID)));
         }
 
