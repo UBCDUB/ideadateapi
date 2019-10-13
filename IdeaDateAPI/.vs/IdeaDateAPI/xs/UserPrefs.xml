@@ -1,4 +1,39 @@
 ﻿<Properties StartupConfiguration="{CF5A1DC6-4C1F-46A7-9F2D-3F16935BEB67}|Default">
-  <MonoDevelop.Ide.ItemProperties.IdeaDateAPI FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.IdeaDateAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="IdeaDateAPI/Data/IMongoDbContext.cs">
+    <Files>
+      <File FileName="IdeaDateAPI/Startup.cs" Line="22" Column="10" />
+      <File FileName="IdeaDateAPI/Models/User.cs" Line="6" Column="29" />
+      <File FileName="IdeaDateAPI/MongoDbContext.cs" Line="17" Column="62" />
+      <File FileName="IdeaDateAPI/Controllers/UserController.cs" Line="34" Column="59" />
+      <File FileName="IdeaDateAPI/Data/UserRepository.cs" Line="50" Column="1" />
+      <File FileName="IdeaDateAPI/Data/IUserRepository.cs" Line="11" Column="20" />
+      <File FileName="IdeaDateAPI/Data/IMongoDbContext.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="IdeaDateAPI" expanded="True">
+            <Node name="IdeaDateAPI" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True">
+                <Node name="IUserRepository.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
