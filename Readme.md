@@ -8,8 +8,9 @@ Account Creation
 ---
 
 ```/user/create```
-Type: POST
-Consumes: 
+
+Type: POST <br>
+Consumes: <br>
 JSON Object with 
 - Name (String)
 - Role (String), one of: 'designer', 'developer', 'project manager'
@@ -18,14 +19,15 @@ JSON Object with
 - Tech Stack (List of String)
 
 e.g. call create endpoint for a new user
-```{name: "Will", role: "developer", gh_username: "wjwalcher", desc: "A really cool dude 😎", "c#, java, python, c"}```
+```{"name": "Will", "role": "developer", "gh_username": "wjwalcher", "desc": "A really cool dude 😎", "tech_stack": "c#, java, python, c"}```
 
 Produces: 
 - On success, return code 200 OK (and a UID to store in cookie for quick 'authentication' purposes)
 - On failure, return code 403 UNAUTHORIZED
 
 ```/user/edit```
-Consumes:
+
+Consumes: <br>
 JSON Object containing fields of user to edit/update
 - Name (String)
 - Role (String), one of: 'designer', 'developer', 'project manager'
@@ -42,8 +44,9 @@ Produces:
 - On failure, return code 403 UNAUTHORIZED
 
 ```/user/delete```
-Consumes:
-(Hacky and not smart) a 'user id' to delete
+
+Consumes: <br>
+(Hacky and not smart) a 'user id' to delete <br>
 
 Produces:
 - On success, return code 200 OK
@@ -55,7 +58,8 @@ Project Management View
 ---
 
 ```/project/create```
-Consumes: 
+
+Consumes: <br>
 JSON Object containing
 - Project name (String)
 - GitHub URL (String)
@@ -68,8 +72,9 @@ Produces:
 
 
 ```/project/edit```
-Consumes:
-JSON Object containing the fields of edits to be made
+
+Consumes: <br>
+JSON Object containing the fields of edits to be made 
 - Project name (String) 
 - GitHub URL (String)
 - Project description (String)
@@ -82,8 +87,9 @@ Produces:
 
 
 ```/project/delete```
-Consumes:
-(Again, not smart) Project UID (String)
+
+Consumes: <br>
+(Again, not smart) Project UID (String) <br>
 
 Produces:
 - On success, return code 200 OK
@@ -95,13 +101,14 @@ Collaborator View
 ---
 
 ```/collaborator/getnextproject/{uid}```
-Get the next project for a given user. The backend tracks which projects a user has seen so far, and will deliver a new project each time this is called. 
-Type: GET
+
+Get the next project for a given user. The backend tracks which projects a user has seen so far, and will deliver a new project each time this is called. <br>
+Type: GET <br>
 Consumes: 
 - Collaborator's UID 
 
-Produces:
-(On success - status code 200 OK)
+Produces: <br>
+(On success - status code 200 OK) 
 - A JSON response containing all the attributes of a project (as specified above)
 - This will also include the unique ID of the project (which you will pass to likeProject and dismissProject) 
 
@@ -109,9 +116,10 @@ Produces:
 
 
 ```/collaborator/likeProject```
-Type: POST
-Consumes:
-JSON object containing collaborator's UID and project's UID
+
+Type: POST <br>
+Consumes: <br>
+JSON object containing collaborator's UID and project's UID <br>
 
 Effects: 
 - Adds user ID of user to project's like list
@@ -122,9 +130,10 @@ Produces:
 - On failure, return status code 403 UNAUTHORIZED
 
 ```/collaborator/dismissProject```
-Type: POST
-Consumes:
-JSON object containing collaborator's UID and project's UID
+
+Type: POST <br>
+Consumes: <br>
+JSON object containing collaborator's UID and project's UID <br>
 
 Effects: 
 - Adds project ID to user's seen list
@@ -139,8 +148,9 @@ Recruiting View
 ---
 
 ```/recruiter/getlikes/{projectId}```
-Returns a list of the users (and user IDs) of the users that liked the given project
-Type: GET
+
+Returns a list of the users (and user IDs) of the users that liked the given project <br>
+Type: GET <br>
 Consumes: 
 - ProjectId (path variable) of the project to get the likes for
 
@@ -148,8 +158,9 @@ Produces:
 - On success (status code 200 OK), list of JSON objects containing usernames, GitHub profiles, and UIDs of each user
 
 ```/recruiter/likeUser```
-Type: POST
-Consumes: 
+
+Type: POST <br>
+Consumes:
 - User ID of the user to like
 
 Effects: 
@@ -160,7 +171,7 @@ Produces:
 - On failure, return status code 403 UNAUTHORIZED 
 
 ```/recruiter/dismissUser```
-Type: POST
+Type: POST <br>
 Consumes:
 - User ID of the user to dismiss
 
