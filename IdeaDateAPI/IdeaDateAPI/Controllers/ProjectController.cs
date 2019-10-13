@@ -29,8 +29,7 @@ namespace IdeaDateAPI.Controllers
         [HttpPost("create")]
         public ActionResult<string> Post([FromBody]Project value)
         {
-            string uid = Guid.NewGuid().ToString("N");
-            value.UID = uid;
+            value.UID = value.GitHubURL;
             _projectRepository.Add(value);
             return Ok(value.UID);
         }
