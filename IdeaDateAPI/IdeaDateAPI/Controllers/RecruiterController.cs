@@ -2,45 +2,83 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using IdeaDateAPI.Models;
 using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+using Newtonsoft.Json;
+using SendGrid;
+using SendGrid.Helpers.Mail;
 
 namespace IdeaDateAPI.Controllers
 {
     [Route("api/[controller]")]
     public class RecruiterController : Controller
     {
-        // GET: api/values
-        [HttpGet]
-        public IEnumerable<string> Get()
+
+        private readonly IProjectRepository _projectRepository;
+        private readonly IUserRepository _userRepository;
+
+        public RecruiterController(IProjectRepository projectRepository,
+            IUserRepository userRepository)
         {
-            return new string[] { "value1", "value2" };
+            _projectRepository = projectRepository;
+            _userRepository = userRepository;
         }
 
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpGet("{uid}")]
+        public List<User> GetLikes(string uid)
         {
-            return "value";
+            List<string> results = new List<string>();
+            List<string> likes =
+                _projectRepository.GetProject(uid).Result.LikedBy;
+            List<User> users = _userRepository.GetUsers().Result
+                .Where(x => likes.Contains(x.UID)).ToList();
+
+            return users;          
         }
 
-        // POST api/values
-        [HttpPost]
-        public void Post([FromBody]string value)
+        [HttpPost("likeuser")]
+        public void LikeUser([FromBody] Dictionary<string, string> jsonBody)
         {
+            string to_uid = jsonBody["user_uid"];
+            Project p = _projectRepository.GetProject(jsonBody["project_uid"]).Result;
+            p.Collaborators.Add(to_uid);
+            _projectRepository.Update(p);
+
+            User fromUser = _userRepository.GetUser(p.Founder).Result;
+            User toUser = _userRepository.GetUser(to_uid).Result;
+
+            SendMail(fromUser, toUser, p).Wait();
         }
 
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        [HttpPost("dismissuser")]
+        public void DismissUser([FromBody] Dictionary<string, string> jsonBody)
         {
+            string user_uid = jsonBody["user_uid"];
+            Project p = _projectRepository.GetProject(jsonBody["project_uid"]).Result;
+            p.LikedBy.Remove(user_uid);
+            _projectRepository.Update(p);
+
         }
 
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        static async Task SendMail(User fromUser, User toUser, Project p)
         {
+            var apiKey = "<API_KEY_HERE>";
+            Console.WriteLine("SG API Key: " + apiKey);
+            var client = new SendGridClient(apiKey);
+            var from = new EmailAddress("test@example.com", "IdeaDate Service");
+            var subject = fromUser.Name + " Wants to Collaborate With You!";
+            var to = new EmailAddress(toUser.Email, toUser.Name);
+            var plainTextContent = "";
+            var htmlContent = "Hi " + toUser.Name + "!<br>" +
+                fromUser.Name + " wants to collaborate with you on their project, "
+                + "<b>" + p.Name + "</b>.<br>" + "Get in touch with them via the following info to start working:<br>"
+                + "<b>GitHub:</b> " + fromUser.GitHub + "<br>" + "<b>Email:</b> " + fromUser.Email + "<br>"
+                + "Keep on hacking! <br>Sincerely,<br><i>The IdeaDate Team<i>";
+            var msg = MailHelper.CreateSingleEmail(from, to, subject, plainTextContent, htmlContent);
+            var response = await client.SendEmailAsync(msg);
+            Console.WriteLine("Status code: " + response.StatusCode);
         }
+
+
     }
 }

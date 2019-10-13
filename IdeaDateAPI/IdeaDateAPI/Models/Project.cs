@@ -12,12 +12,20 @@ namespace IdeaDateAPI.Models
         public string Name { get; set; }
         public string GitHubURL { get; set; }
         public string Description { get; set; }
+        public string Founder { get; set; }
 
         /// <summary>
         /// UIDs of users that liked the project
         /// </summary>
-        public IEnumerable<string> LikedBy { get; set; }
-        public IEnumerable<string> TechStack { get; set; }
-        public IEnumerable<string> Collaborators { get; set; }
+        public List<string> LikedBy { get; set; }
+        public List<string> TechStack { get; set; }
+        public List<string> Collaborators { get; set; }
+
+        public Project()
+        {
+            LikedBy = new List<string>();
+            Collaborators = new List<string>();
+        }
+
     }
 }

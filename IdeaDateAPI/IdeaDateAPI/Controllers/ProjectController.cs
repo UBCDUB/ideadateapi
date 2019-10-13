@@ -6,7 +6,6 @@ using IdeaDateAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace IdeaDateAPI.Controllers
 {
@@ -20,7 +19,6 @@ namespace IdeaDateAPI.Controllers
             _projectRepository = projectRepository;
         }
 
-        // GET api/values/5
         [HttpGet("{id}")]
         public Project Get(string id)
         {
@@ -28,7 +26,6 @@ namespace IdeaDateAPI.Controllers
             return project;
         }
 
-        // POST api/values
         [HttpPost("create")]
         public ActionResult<string> Post([FromBody]Project value)
         {
@@ -38,14 +35,12 @@ namespace IdeaDateAPI.Controllers
             return Ok(value.UID);
         }
 
-        // PUT api/values/5
         [HttpPut("edit")]
         public void Put([FromBody]Project value)
         {
             _projectRepository.Update(value);
         }
 
-        // DELETE api/values/5
         [HttpDelete("delete/{id}")]
         public void Delete(string id)
         {
