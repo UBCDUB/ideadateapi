@@ -36,30 +36,47 @@ namespace IdeaDateAPI.Controllers
             return users;          
         }
 
-        [HttpPost]
+        [HttpPost("likeuser")]
         public void LikeUser([FromBody] Dictionary<string, string> jsonBody)
         {
-            
+            string to_uid = jsonBody["user_uid"];
+            Project p = _projectRepository.GetProject(jsonBody["project_uid"]).Result;
+            p.Collaborators.Append(to_uid);
+            _projectRepository.Update(p);
 
+            User fromUser = _userRepository.GetUser(p.Founder).Result;
+            User toUser = _userRepository.GetUser(to_uid).Result;
+
+            SendMail(fromUser, toUser, p).Wait();
         }
 
-        [HttpPost]
+        [HttpPost("dismissuser")]
         public void DismissUser([FromBody] Dictionary<string, string> jsonBody)
         {
+            string user_uid = jsonBody["user_uid"];
+            Project p = _projectRepository.GetProject(jsonBody["project_uid"]).Result;
+            p.LikedBy.Remove(user_uid);
+            _projectRepository.Update(p);
 
         }
 
-        static async Task Execute()
+        static async Task SendMail(User fromUser, User toUser, Project p)
         {
-            var apiKey = Environment.GetEnvironmentVariable("SENDGRID_API_KEY");
+            var apiKey = "<API_KEY_HERE>";
+            Console.WriteLine("SG API Key: " + apiKey);
             var client = new SendGridClient(apiKey);
-            var from = new EmailAddress("test@example.com", "Example User");
-            var subject = "Sending with Twilio SendGrid is Fun";
-            var to = new EmailAddress("wjwalcher@gmail.com", "Will W");
-            var plainTextContent = "and easy to do anywhere, even with C#";
-            var htmlContent = "<strong>and easy to do anywhere, even with C#</strong>";
+            var from = new EmailAddress("test@example.com", "IdeaDate Service");
+            var subject = fromUser.Name + " Wants to Collaborate With You!";
+            var to = new EmailAddress(toUser.Email, toUser.Name);
+            var plainTextContent = "";
+            var htmlContent = "Hi " + toUser.Name + "!<br>" +
+                fromUser.Name + " wants to collaborate with you on their project, "
+                + "<b>" + p.Name + "</b>.<br>" + "Get in touch with them via the following info to start working:<br>"
+                + "<b>GitHub:</b> " + fromUser.GitHub + "<br>" + "<b>Email:</b> " + fromUser.Email + "<br>"
+                + "Keep on hacking! <br>Sincerely,<br><i>The IdeaDate Team<i>";
             var msg = MailHelper.CreateSingleEmail(from, to, subject, plainTextContent, htmlContent);
             var response = await client.SendEmailAsync(msg);
+            Console.WriteLine("Status code: " + response.StatusCode);
         }
 
 

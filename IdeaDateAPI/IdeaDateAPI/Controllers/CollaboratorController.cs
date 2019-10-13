@@ -30,17 +30,20 @@ namespace IdeaDateAPI.Controllers
             return projects.Where(p => !(user.LikedProjects.Contains(p.UID) || user.DismissedProjects.Contains(p.UID)));
         }
 
-        // POST api/values
-        [HttpPost("likeProject")]
-        public void LikeProject([FromBody]Dictionary<string, string> value)
+        [HttpPost("likeproject")]
+        public void LikeProject([FromBody] Dictionary<string, string> value)
         {
             string uid = value["User"];
             User user = _userRepository.GetUser(uid).Result;
             user.LikedProjects.Add(value["Project"]);
+
+            Project p = _projectRepository.GetProject(value["Project"]).Result;
+            p.LikedBy.Add(uid);
+
+            _projectRepository.Update(p);
             _userRepository.Update(user);
         }
 
-        // PUT api/values/5
         [HttpPost("dismissproject")]
         public void DismissProject([FromBody]Dictionary<string, string> value)
         {

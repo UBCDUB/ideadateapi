@@ -29,7 +29,7 @@ namespace IdeaDateAPI.Models
         {
             try
             {
-                FilterDefinition<User> filter = Builders<User>.Filter.Eq("Id", id);
+                FilterDefinition<User> filter = Builders<User>.Filter.Eq("UID", id);
                 return await _context.Users.Find(filter).FirstOrDefaultAsync();
             }
             catch
@@ -71,5 +71,6 @@ namespace IdeaDateAPI.Models
                 throw;
             }
         }
+
     }
 }
