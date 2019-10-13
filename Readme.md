@@ -148,7 +148,7 @@ Effects:
 - Adds project ID to user's seen list
 
 e.g. 
-``````{"User": "2c5f5ccc36fb43f2a38c34af29ff5485", "Project": "f64dab1cae5c4dbb9963254bac298510"}```
+```{"User": "2c5f5ccc36fb43f2a38c34af29ff5485", "Project": "f64dab1cae5c4dbb9963254bac298510"}```
 
 
 Recruiting View
@@ -187,7 +187,9 @@ e.g.
         ],
         "dismissedProjects": []
     }
-]```
+]
+```
+
 
 ```/api/recruiter/likeuser```
 
