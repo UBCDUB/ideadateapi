@@ -4,3 +4,7 @@ IdeaDateAPI/IdeaDateAPI/obj/*
 .vs
 .vscode
 IdeaDateAPI/.vs/*
+*/**/.DS_Store
+=======
+bin/
+obj/

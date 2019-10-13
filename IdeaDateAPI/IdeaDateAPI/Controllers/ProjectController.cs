@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using IdeaDateAPI.Models;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -11,6 +13,13 @@ namespace IdeaDateAPI.Controllers
     [Route("api/[controller]")]
     public class ProjectController : Controller
     {
+        private readonly IProjectRepository _projectRepository;
+
+        public ProjectController(IProjectRepository projectRepository)
+        {
+            _projectRepository = projectRepository;
+        }
+
         // GET: api/values
         [HttpGet]
         public IEnumerable<string> Get()
@@ -20,27 +29,34 @@ namespace IdeaDateAPI.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public Project Get(string id)
         {
-            return "value";
+            Project project = _projectRepository.GetProject(id).Result;
+            return project;
         }
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody]string value)
+        public ActionResult<string> Post([FromBody]Project value)
         {
+            string uid = Guid.NewGuid().ToString("N");
+            value.UID = uid;
+            _projectRepository.Add(value);
+            return Ok(value.UID);
         }
 
         // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        [HttpPut]
+        public void Put([FromBody]Project value)
         {
+            _projectRepository.Update(value);
         }
 
         // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        [HttpDelete]
+        public void Delete(string id)
         {
+            _projectRepository.Delete(id);
         }
     }
 }
