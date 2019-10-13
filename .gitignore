@@ -1,1 +1,6 @@
 .*/
+IdeaDateAPI/IdeaDateAPI/bin/*
+IdeaDateAPI/IdeaDateAPI/obj/*
+.vs
+.vscode
+IdeaDateAPI/.vs/*

@@ -52,7 +52,7 @@ namespace IdeaDateAPI.Models
         {
             try
             {
-                await _context.Users.ReplaceOneAsync(filter: g => g.Id == user.Id, replacement: user);
+                await _context.Users.ReplaceOneAsync(filter: g => g.UID == user.UID, replacement: user);
             }
             catch
             {

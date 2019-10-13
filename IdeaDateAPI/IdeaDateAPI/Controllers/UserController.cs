@@ -1,10 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using IdeaDateAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -28,18 +30,23 @@ namespace IdeaDateAPI.Controllers
             return users;
         }
 
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public User Get(string id)
+        // Get user by UID
+        [HttpGet("{uid}")]
+        public User Get(string uid)
         {
-            User user = _userRepository.GetUser(id).Result;
+            User user = _userRepository.GetUser(uid).Result;
             return user;
         }
 
-        // POST api/values
-        [HttpPost]
-        public void Post([FromBody]string value)
+        // Creates a new user 
+        [HttpPost("create")]
+        public ActionResult<String> CreateUser([FromBody] User user)
         {
+            string uid = Guid.NewGuid().ToString("N");
+            user.UID = uid;
+            _userRepository.Add(user);
+
+            return Ok(uid);
         }
 
         // PUT api/values/5
@@ -48,12 +55,6 @@ namespace IdeaDateAPI.Controllers
         {
         }
 
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-            Console.WriteLine(jsonBody["name"]);
-            Console.WriteLine(jsonBody["gh_username"]);
-        }
+
     }
 }
