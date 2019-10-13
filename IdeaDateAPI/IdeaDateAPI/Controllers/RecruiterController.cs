@@ -28,10 +28,10 @@ namespace IdeaDateAPI.Controllers
         public List<User> GetLikes(string uid)
         {
             List<string> results = new List<string>();
-            List<string> likes = (List<string>)
+            List<string> likes =
                 _projectRepository.GetProject(uid).Result.LikedBy;
-            List<User> users = (List<User>) _userRepository.GetUsers().Result
-                .Where(x => likes.Contains(x.UID));
+            List<User> users = _userRepository.GetUsers().Result
+                .Where(x => likes.Contains(x.UID)).ToList();
 
             return users;          
         }
@@ -41,7 +41,7 @@ namespace IdeaDateAPI.Controllers
         {
             string to_uid = jsonBody["user_uid"];
             Project p = _projectRepository.GetProject(jsonBody["project_uid"]).Result;
-            p.Collaborators.Append(to_uid);
+            p.Collaborators.Add(to_uid);
             _projectRepository.Update(p);
 
             User fromUser = _userRepository.GetUser(p.Founder).Result;
