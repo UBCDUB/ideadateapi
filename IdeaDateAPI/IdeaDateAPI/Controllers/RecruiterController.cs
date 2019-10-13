@@ -73,7 +73,7 @@ namespace IdeaDateAPI.Controllers
                 fromUser.Name + " wants to collaborate with you on their project, "
                 + "<a href=" + p.GitHubURL + "><b>" + p.Name + "</b></a>.<br>"
                 + "Get in touch with them via the following info to start working:<br>"
-                + "<b>GitHub:</b> " + fromUser.GitHub + "<br>" + "<b>Email:</b> "
+                + "<b>GitHub:</b><a href=https://www.github.com/" + fromUser.GitHub + ">" + fromUser.GitHub + "</a><br>" + "<b>Email:</b> "
                 + fromUser.Email + "<br><br>"
                 + "Keep on hacking! <br>Sincerely,<br><i>The IdeaDate Team<i>";
             var msg = MailHelper.CreateSingleEmail(from, to, subject,
