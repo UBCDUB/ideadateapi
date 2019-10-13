@@ -18,5 +18,6 @@ namespace IdeaDateAPI.Models
         /// </summary>
         public IEnumerable<string> LikedBy { get; set; }
         public IEnumerable<string> TechStack { get; set; }
+        public IEnumerable<string> Collaborators { get; set; }
     }
 }
