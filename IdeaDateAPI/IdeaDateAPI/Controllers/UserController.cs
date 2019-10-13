@@ -53,11 +53,10 @@ namespace IdeaDateAPI.Controllers
         [HttpPost("create")]
         public ActionResult<String> CreateUser([FromBody] User user)
         {
-            string uid = Guid.NewGuid().ToString("N");
-            user.UID = uid;
+            user.UID = user.GitHub;
             _userRepository.Add(user);
 
-            return Ok(uid);
+            return Ok(user.UID);
         }
     }
 }
